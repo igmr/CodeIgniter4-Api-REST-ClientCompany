@@ -1,0 +1,35 @@
+
+--	Crear Proyecto
+composer create-project CodeIgniter4/appstarter ci_queries
+
+-- Crear migraciones
+php spark migrate:create add_table_company
+php spark migrate:create add_table_client
+--	Crear seeder
+php spark make:seeder company_seed
+php spark make:seeder client_seed
+php spark make:seeder init_seed
+
+--	Crear entities
+php spark make:entity company
+php spark make:entity client
+
+--	Crear models
+php spark make:model company_model
+php spark make:model client_model
+
+--	Crear controllers
+php spark make:controller company_controller
+php spark make:controller client_controller
+
+--	Comandos
+--	Crear base de datos
+php spark db:create CodeIgniter4_Api_REST_Client_Company
+--	Crear migraciones
+php spark migrate
+--	Deshacer cambios
+php spark migrate:rollback
+--	Crear seeder
+php spark db:seed InitSeed
+--	Crear servidor
+php spark serve
