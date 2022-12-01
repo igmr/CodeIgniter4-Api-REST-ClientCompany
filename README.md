@@ -104,7 +104,7 @@ mysqldump -u root -p CodeIgniter4_Api_REST_Client_Company > ./script.sql
 Abrimos el proyecto en nuestro editor de código de preferencia
 ```bash
 # Accedemos al proyecto
-cd FlightPHP-Api-REST-TodoList
+cd CodeIgniter4-Api-REST-ClientCompany
 # Abrimos el proyecto con Visual Studio Code
 code .
 # O también podemos abrirlo con sublime text
@@ -158,35 +158,6 @@ php spark db:seed InitSeed
 Y finalmente levantamos el servidor desde Spark
 ```bash
 php spark serve
-
-```
-
-
-### Carpetas
-
-```bash
-.
-├── .vscode
-│   └── settings.json
-├── doc
-│   ├── ModelER-todo.png
-│   └── script.sql
-├── src
-│   ├── model
-│   │   ├── ListModel.php
-│   │   └── TaskModel.php
-│   └── service
-│       ├── BaseService.php
-│       ├── ListService.php
-│       └── TaskService.php
-├── vendor
-│   └── ...
-├── .gitignore
-├── .htaccess
-├── composer.json
-├── Config.php
-├── index.php
-└── README.md
 
 ```
 
